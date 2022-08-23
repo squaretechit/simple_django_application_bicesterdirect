@@ -5,7 +5,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f^1-#9wmb4_oq8ywy3=(@p2vs@hi0q)3510!3)-rp0+-_4-1*f'
 
 DEBUG =  True
-ALLOWED_HOSTS = ['bicesterdirect.com','www.bicesterdirect.com','*']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -52,23 +52,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'bicesterdirect.wsgi.application'
 
 
-# Database
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'OPTIONS': {
-#         'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-#         },
-#         'NAME': 'gyruuuwr_bicesterdirect',
-#         'USER': 'gyruuuwr_bicesterdirect',
-#         'PASSWORD': 'gyruuuwr_bicesterdirect',
-#         'HOST': 'localhost',
-#         'PORT': '3306'
-#     }
-# }
-
-
 # Password validation
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -100,7 +83,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-# STATIC_ROOT = "/home/gyruuuwr/bicesterdirect.com/static/"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -108,7 +90,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #Email options
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'admin@bicesterdirect.com'
-EMAIL_HOST_PASSWORD = 'admin@bicesterdirect.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
